@@ -4,7 +4,7 @@
 #
 Name     : mvn-jackson-parent
 Version  : 2.6.1
-Release  : 2
+Release  : 3
 URL      : https://github.com/FasterXML/jackson-parent/archive/jackson-parent-2.6.1.tar.gz
 Source0  : https://github.com/FasterXML/jackson-parent/archive/jackson-parent-2.6.1.tar.gz
 Source1  : https://repo1.maven.org/maven2/com/fasterxml/jackson/jackson-parent/2.6.1/jackson-parent-2.6.1.pom
