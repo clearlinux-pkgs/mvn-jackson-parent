@@ -4,14 +4,15 @@
 #
 Name     : mvn-jackson-parent
 Version  : 2.6.1
-Release  : 3
+Release  : 4
 URL      : https://github.com/FasterXML/jackson-parent/archive/jackson-parent-2.6.1.tar.gz
 Source0  : https://github.com/FasterXML/jackson-parent/archive/jackson-parent-2.6.1.tar.gz
 Source1  : https://repo1.maven.org/maven2/com/fasterxml/jackson/jackson-parent/2.6.1/jackson-parent-2.6.1.pom
 Source2  : https://repo1.maven.org/maven2/com/fasterxml/jackson/jackson-parent/2.6.2/jackson-parent-2.6.2.pom
 Source3  : https://repo1.maven.org/maven2/com/fasterxml/jackson/jackson-parent/2.7/jackson-parent-2.7.pom
 Source4  : https://repo1.maven.org/maven2/com/fasterxml/jackson/jackson-parent/2.8/jackson-parent-2.8.pom
-Source5  : https://repo1.maven.org/maven2/com/fasterxml/jackson/jackson-parent/2.9.1/jackson-parent-2.9.1.pom
+Source5  : https://repo1.maven.org/maven2/com/fasterxml/jackson/jackson-parent/2.9.0/jackson-parent-2.9.0.pom
+Source6  : https://repo1.maven.org/maven2/com/fasterxml/jackson/jackson-parent/2.9.1/jackson-parent-2.9.1.pom
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : Apache-2.0
@@ -47,8 +48,11 @@ cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/j
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/jackson-parent/2.8
 cp %{SOURCE4} %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/jackson-parent/2.8/jackson-parent-2.8.pom
 
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/jackson-parent/2.9.0
+cp %{SOURCE5} %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/jackson-parent/2.9.0/jackson-parent-2.9.0.pom
+
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/jackson-parent/2.9.1
-cp %{SOURCE5} %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/jackson-parent/2.9.1/jackson-parent-2.9.1.pom
+cp %{SOURCE6} %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/jackson-parent/2.9.1/jackson-parent-2.9.1.pom
 
 
 %files
@@ -60,4 +64,5 @@ cp %{SOURCE5} %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/j
 /usr/share/java/.m2/repository/com/fasterxml/jackson/jackson-parent/2.6.2/jackson-parent-2.6.2.pom
 /usr/share/java/.m2/repository/com/fasterxml/jackson/jackson-parent/2.7/jackson-parent-2.7.pom
 /usr/share/java/.m2/repository/com/fasterxml/jackson/jackson-parent/2.8/jackson-parent-2.8.pom
+/usr/share/java/.m2/repository/com/fasterxml/jackson/jackson-parent/2.9.0/jackson-parent-2.9.0.pom
 /usr/share/java/.m2/repository/com/fasterxml/jackson/jackson-parent/2.9.1/jackson-parent-2.9.1.pom
